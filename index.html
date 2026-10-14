@@ -2,77 +2,111 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KSU Coffee - Menu</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f1e8;
-            color: #493628;
-            margin: 0;
-            padding: 40px 20px;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KSU Coffee - Menu v2</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f1e8;
+      color: #59351f;
+      margin: 0;
+      padding: 30px 16px;
+    }
 
-        .container {
-            max-width: 650px;
-            margin: auto;
-            padding: 28px;
-            background-color: #ffffff;
-            border-radius: 16px;
-            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-        }
+    .container {
+      max-width: 650px;
+      margin: 20px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px #00000012;
+    }
 
-        h1 {
-            text-align: center;
-            color: #6f4e37;
-        }
+    h1, h2, .version {
+      text-align: center;
+    }
 
-        .student {
-            text-align: center;
-            margin-bottom: 24px;
-        }
+    h1 {
+      margin-bottom: 8px;
+    }
 
-        .menu-item {
-            display: flex;
-            justify-content: space-between;
-            gap: 16px;
-            padding: 14px 0;
-            border-bottom: 1px solid #eadfd2;
-        }
+    .student {
+      text-align: center;
+      margin-bottom: 30px;
+    }
 
-        .version {
-            text-align: center;
-            margin-top: 24px;
-            color: #777777;
-        }
-    </style>
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 16px 0;
+      border-bottom: 1px solid #eadbcb;
+    }
+
+    .price {
+      white-space: nowrap;
+      font-weight: bold;
+    }
+
+    .new {
+      color: #527b35;
+      font-weight: bold;
+    }
+
+    .promo-link {
+      display: block;
+      width: fit-content;
+      margin: 25px auto 10px;
+      padding: 12px 24px;
+      background: #633b24;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+    }
+
+    .promo-link:hover {
+      background: #855333;
+    }
+
+    .version {
+      margin-top: 25px;
+      color: #8a6b55;
+    }
+  </style>
 </head>
 <body>
-    <main class="container">
-        <h1>KSU Coffee</h1>
-        <p class="student">รหัสนักศึกษา: 671540005019-8</p>
+  <main class="container">
+    <h1>KSU Coffee</h1>
+    <p class="student">รหัสนักศึกษา: 671540005019-8</p>
 
-        <h2>เมนูเครื่องดื่ม</h2>
+    <h2>เมนูเครื่องดื่ม</h2>
 
-        <div class="menu-item">
-            <span>อเมริกาโน่</span>
-            <strong>45 บาท</strong>
-        </div>
+    <div class="menu-item">
+      <span>อเมริกาโน่</span>
+      <span class="price">45 บาท</span>
+    </div>
 
-        <div class="menu-item">
-            <span>ลาเต้</span>
-            <strong>50 บาท</strong>
-        </div>
+    <div class="menu-item">
+      <span>ลาเต้</span>
+      <span class="price">50 บาท</span>
+    </div>
 
-        <div class="menu-item">
-            <span>คาปูชิโน่</span>
-            <strong>50 บาท</strong>
-        </div>
+    <div class="menu-item">
+      <span>คาปูชิโน่</span>
+      <span class="price">50 บาท</span>
+    </div>
 
-        <p class="version">Menu v1</p>
-    </main>
+    <div class="menu-item">
+      <span>มัทฉะลาเต้ <span class="new">NEW</span></span>
+      <span class="price">55 บาท</span>
+    </div>
+
+    <a class="promo-link" href="http://localhost:8081">
+      ดูโปรโมชั่น
+    </a>
+
+    <p class="version">Menu v2</p>
+  </main>
 </body>
 </html>
-
-
